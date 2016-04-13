@@ -80,7 +80,7 @@ merge-octopus-fork () {
 		if test $? -ne 0
 		then
 			echo "Simple merge did not work, trying automatic merge."
-			git-merge-index -o git-merge-one-file -a
+			git merge-index -o git-merge-one-file -a
 
 			if test $? -ne 0
 			then
